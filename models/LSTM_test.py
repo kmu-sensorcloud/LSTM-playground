@@ -9,7 +9,7 @@ from keras.layers import Dense, LSTM
 
 pd.options.mode.chained_assignment = None
 
-df = pd.read_csv('coin_desk_data.csv', encoding='utf-8-sig')
+df = pd.read_csv('../data/coin_desk_data.csv', encoding='utf-8-sig')
 data = df.filter(['Close']).values
 
 scaler = MinMaxScaler(feature_range=(0, 1))

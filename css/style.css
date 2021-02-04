@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+#candle-chart {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+#bar-chart {
+    max-width: 700px;
+    margin: 10px auto;
+}
