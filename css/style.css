@@ -4,12 +4,15 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-#candle-chart {
-    max-width: 700px;
+.charts {
     margin: 10px auto;
+    max-width: 700px;
+}
+
+#candle-chart {
+
 }
 
 #bar-chart {
-    max-width: 700px;
-    margin: 10px auto;
+    margin-top: -30px;
 }
