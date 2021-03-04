@@ -1,10 +1,7 @@
 var coinData = [];
 var volData = [];
 var timeData = [];
-var ma5 = [];
 var ma20 = [];
-var ma60 = [];
-var ma120 = [];
 
 
 $.ajax({
