@@ -67,4 +67,3 @@ valid['Predictions'] = predictions['Predictions'].values
 
 plt.plot(valid[['Close', 'Predictions']][:100])
 plt.show()
-
