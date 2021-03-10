@@ -68,7 +68,7 @@ class CustomEnv(gym.Env):
 
     def _take_action(self, action):
         current_price = self.prices[:, self.posit_window+self.len_obs]
-
+        shares_sold = 0
         for idx, acc in enumerate(action):
             if 4 < acc <= 5:
                 # Buy 40% of balance in shares
@@ -97,6 +97,7 @@ class CustomEnv(gym.Env):
 
             elif 1 < acc <= 2:
                 # Sell 10 % of shared held
+            
                 try:
                     shares_sold = math.floor(self.shares_held[idx] * 0.10)
                 except:
@@ -144,5 +145,3 @@ class CustomEnv(gym.Env):
         print(f'\nep {ep} ' + '*' * 21)
         print(f'Profit: {round(profit * 100, 4)}%')
         print(f'Vol profit: {round(vol_profit * 100, 4)}%')
-
-

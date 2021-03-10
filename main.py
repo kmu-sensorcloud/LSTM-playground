@@ -14,10 +14,8 @@ import stock_env
 
 sns.set()  # just for better images
 
-
 def get_data(path, index_col=0, train_pct=0.7):
     """
-
     :param train_pct:
     :param index_col:
     :param path:
