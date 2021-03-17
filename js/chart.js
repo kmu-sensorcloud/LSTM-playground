@@ -40,7 +40,7 @@ function loadCSV(data) {
         coinData_temp.push(price_temp);
 
         volData.push(currentLine.pop());
-        coinData.push(coinData_temp);
+        coinData.push(coinData_temp);   
         timeData.push(currentLine[0]);
 
         close.push(currentLine[currentLine.length - 1]);
@@ -75,7 +75,7 @@ function getMALine(timestamp, close, N, ma_temp) {
     return ma_temp;
 }
 
-// function getMinMax() {    FIXME: find min max within selection
+// function getMinMax() {    FIXME: find min max within selection TODO: event delegation
 //     maxes = []
 //     for (var i = 1; i < a.length - 1; ++i) {
 //         if (a[i-1] < a[i] && a[i] > a[i+1])

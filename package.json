@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "apexcharts": "^3.23.1"
-  }
+  },
+  "name": "lstm-playground",
+  "description": "Stock Trading Model using Q Learning.",
+  "version": "1.0.0",
+  "main": "index.html",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmu-sensorcloud-predictors/LSTM-playground.git"
+  },
+  "author": "Sensor Cloud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmu-sensorcloud-predictors/LSTM-playground/issues"
+  },
+  "homepage": "https://github.com/kmu-sensorcloud-predictors/LSTM-playground#readme"
 }
