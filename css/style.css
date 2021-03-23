@@ -1,11 +1,74 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
     font-family: Roboto, sans-serif;
 }
 
+header {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(9, 0, 134);
+    align-items: center;
+    align-self: center;
+}
+
+header > h1 {
+    font-family: 'Anton', sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0%;
+    margin-left: 20px;
+}
+
+header ul > li {
+    font-family: 'Anton', sans-serif;
+    margin-top: 10px;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.current-modal {
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    align-content: center;
+}
+
+.current-title {
+    font-family: Roboto, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+}
+
+#current-value {
+    font-family: Roboto, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top: 10px;
+    border-bottom: solid;
+    width: 270px;
+    height: 30px;
+}
+
+.time {
+    margin-top: 2px;
+    display: flex;
+    color:rgb(170, 170, 170);
+}
+
+#update-time {
+    margin-left: 10px;
+}
+
 .charts {
-    margin: 10px auto;
+    margin: 20px auto;
     max-width: 700px;
 }
 
@@ -16,3 +79,39 @@ body {
 #bar-chart {
     margin-top: -30px;
 }
+
+.log-modal {
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.log-title {
+    font-family: Roboto, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+}
+
+#log-script {
+    margin-top: 10px;
+    background-color: rgb(200, 200, 200);
+    width: 250px;
+    height: 600px;
+    overflow: scroll;
+}
+
+ul {
+    font-family: 'Anton', sans-serif;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+    color: rgb(255, 255, 255);
+}
+
+

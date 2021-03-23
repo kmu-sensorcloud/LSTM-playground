@@ -5,16 +5,46 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Bitcoin Prediction</title>
+    <title>Bitcoin Price Prediction - Sensor Cloud</title>
 </head>
 
 <body>
-    <div class="charts">
-        <div id="candle-chart">
+    <header>
+        <h1><a href="" onclick="refresh()">SENSOR CLOUD</a></h1>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/kmu-sensorcloud">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class='container'>
+
+        <div class='current-modal'>
+            <div class='current-title'>Current Value</div>
+            <div id='current-value'></div>
+            <div class='time'>
+                Last update:
+                <div id='update-time'></div>
+            </div>
+            
         </div>
 
-        <div id="bar-chart">
+        <div class='log-modal'>
+            <div class='log-title'>Trade Logs</div>
+            <div class='log-context'>
+                <div id='log-script'></div>
+            </div>
         </div>
+
+        <div class="charts">
+            <div id="candle-chart">
+            </div>
+    
+            <div id="bar-chart">
+            </div>
+        </div>
+
     </div>
     <script src="js/chart.js"></script>
     <script src="js/app.js"></script>

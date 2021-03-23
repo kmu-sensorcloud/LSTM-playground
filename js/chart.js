@@ -10,7 +10,7 @@ var ma120 = [];
 $.ajax({
     url: 'data/bitcoin_historical_data.csv',
     dataType: 'text',
-    async:false,
+    async: false,
 }).done(loadCSV);
 
 
